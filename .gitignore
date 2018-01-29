@@ -1,0 +1,14 @@
+# Folder for idea
+.idea/
+
+# File for idea
+# golovach.iml
+
+# Folder for target project
+target/
+
+*.jar
+*.war
+*.ear
+
+
