@@ -14,7 +14,9 @@
 
     <thead class="thead-dark">
     <tr>
+
         <th>Пользователь</th>
+
         <th>Имя</th>
         <th>Фамилия</th>
         <th>Отчество</th>

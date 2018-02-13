@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib tagdir="/WEB-INF/tags" prefix="page"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
 <head>
@@ -10,15 +10,14 @@
 
         <div id="page-preloader" class="preloader">
             <div class="loader">
-                <img class="animated flip" src="/media/img/logo.png" alt="logo">
+                <img class="animated flip" src="media/img/logo.png" alt="logo">
             </div>
         </div> <!--loader-->
 
         <div id="particles-js">
         </div> <!--particle-js-->
         <h1>Интернет-магазин фирмы "HODOVKA"</h1>
-<img src="logo.png">
-<a href="hello.html">Другая страница</a>
+        <a href="<c:url value="/users"/>" target="_parent">Пользователи</a>
 
 </body>
 </html>
