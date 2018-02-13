@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>Hodovka.in.ua</display-name>
+    <display-name>hodovka.in.ua</display-name>
 
     <!--При использовании spring у нас только один сервлет-dispatcher-->
     <servlet>

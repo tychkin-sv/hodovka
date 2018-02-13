@@ -10,12 +10,15 @@
 
         <div id="page-preloader" class="preloader">
             <div class="loader">
-                <img class="animated flip" src="media/img/logo.png" alt="logo">
+                <img class="animated flip" src="/media/img/logo.png" alt="logo">
             </div>
         </div> <!--loader-->
 
         <div id="particles-js">
         </div> <!--particle-js-->
         <h1>Интернет-магазин фирмы "HODOVKA"</h1>
+<img src="logo.png">
+<a href="hello.html">Другая страница</a>
+
 </body>
 </html>

@@ -1,10 +1,13 @@
 package ua.in.hodovka.service;
 
-import ua.in.hodovka.dao.UserDao;
 import ua.in.hodovka.model.User;
+import ua.in.hodovka.dao.UserDao;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
@@ -12,12 +15,15 @@ public class UserServiceImpl implements UserService {
         this.userDao = userDao;
     }
 
-
-    public void addUser(User book) {
-
+    @Override
+    @Transactional
+    public void addUser(User user) {
+        this.userDao.addUser(user);
     }
 
-    public void updateBook(User book) {
+    @Override
+    @Transactional
+    public void updateUser(User user) {
 
     }
 

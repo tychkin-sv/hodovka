@@ -5,9 +5,9 @@ import ua.in.hodovka.model.User;
 import java.util.List;
 
 public interface UserService {
-    public void addUser(User book);
+    public void addUser(User user);
 
-    public void updateBook(User book);
+    public void updateUser(User user);
 
     public void removeUser(int id);
 

@@ -94,4 +94,18 @@ public class User {
     public void setSpare1(String spare1) {
         this.spare1 = spare1;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", secondname='" + secondname + '\'' +
+                ", email='" + email + '\'' +
+                ", spare1='" + spare1 + '\'' +
+                '}';
+    }
 }
