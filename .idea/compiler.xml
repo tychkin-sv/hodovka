@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hodovka" target="1.6" />
+      <module name="hodovka" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
