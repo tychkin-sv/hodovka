@@ -6,6 +6,11 @@
 <html>
 <head>
     <title>Пользователи</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../media/css/register.css" rel="stylesheet">
 
 </head>
 <body>
@@ -41,6 +46,7 @@
         </c:forEach>
     </table>
 </c:if>
+
 
 
 

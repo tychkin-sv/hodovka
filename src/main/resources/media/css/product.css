@@ -1,0 +1,26 @@
+#main{
+  padding: 100px;
+}
+
+#productReview{
+	margin: auto;
+}
+
+#productReview>textarea{
+	width: 100%;
+}
+
+#productReviewTable{
+	width: 100%;
+}
+
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+div{
+  /*border: solid 1px;*/
+}
