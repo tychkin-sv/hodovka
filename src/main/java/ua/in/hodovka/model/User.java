@@ -4,11 +4,11 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tbl_users")
-public class User {
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class User extends Item {
+//    @Id
+//    @Column(name = "id")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private long id;
 
     @Column(name = "username")
     private String username;
@@ -19,8 +19,8 @@ public class User {
     @Column(name = "surname")
     private String surname;
 
-    @Column(name = "name")
-    private String name;
+//    @Column(name = "name")
+//    private String name;
 
     @Column(name = "secondname")
     private String secondname;
@@ -31,13 +31,6 @@ public class User {
     @Column(name = "spare1")
     private String spare1;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;
@@ -63,13 +56,6 @@ public class User {
         this.surname = surname;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSecondname() {
         return secondname;
@@ -98,11 +84,9 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
                 ", secondname='" + secondname + '\'' +
                 ", email='" + email + '\'' +
                 ", spare1='" + spare1 + '\'' +
