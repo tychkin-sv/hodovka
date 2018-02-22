@@ -30,7 +30,7 @@
         <property name="annotatedClasses">
             <list>
                 <value>ua.in.hodovka.model.User</value>
-
+                <value>ua.in.hodovka.model.Product</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -43,7 +43,7 @@
         </property>
     </bean>
 
-    <!--BookDao and BookService beans-->
+    <!--UserDao and UserService beans-->
     <bean id="userDao" class="ua.in.hodovka.dao.UserDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>

@@ -8,9 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Вход</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="row">
+
+    </div>
+</div>
+
 </body>
 </html>

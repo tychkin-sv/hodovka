@@ -1,4 +1,9 @@
 package ua.in.hodovka.dao;
 
-public class ProductDao {
+import ua.in.hodovka.model.Product;
+
+public interface ProductDao extends ItemDao<Product>{
+
+
+
 }

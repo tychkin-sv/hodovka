@@ -1,4 +1,7 @@
 package ua.in.hodovka.dao;
 
-public interface CategoryDao {
+import ua.in.hodovka.model.Category;
+
+public interface CategoryDao extends ItemDao<Category> {
+
 }

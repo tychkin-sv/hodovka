@@ -1,4 +1,10 @@
 package ua.in.hodovka.model;
 
-public class Category {
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tbl_categories")
+public class Category extends Item {
+
 }

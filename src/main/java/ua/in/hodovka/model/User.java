@@ -2,13 +2,14 @@ package ua.in.hodovka.model;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "tbl_users")
-public class User extends Item {
-//    @Id
-//    @Column(name = "id")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private long id;
+public class User extends Item{
+//   @Id
+//   @Column(name = "id")
+//   @GeneratedValue(strategy = GenerationType.IDENTITY)
+//   private long id;
 
     @Column(name = "username")
     private String username;
@@ -19,8 +20,8 @@ public class User extends Item {
     @Column(name = "surname")
     private String surname;
 
-//    @Column(name = "name")
-//    private String name;
+//   @Column(name = "name")
+//   private String name;
 
     @Column(name = "secondname")
     private String secondname;
@@ -30,7 +31,6 @@ public class User extends Item {
 
     @Column(name = "spare1")
     private String spare1;
-
 
     public String getUsername() {
         return username;
@@ -56,7 +56,6 @@ public class User extends Item {
         this.surname = surname;
     }
 
-
     public String getSecondname() {
         return secondname;
     }
@@ -81,12 +80,31 @@ public class User extends Item {
         this.spare1 = spare1;
     }
 
+    //    public long getId() {
+//        return id;
+//    }
+//
+//    public void setId(long id) {
+//        this.id = id;
+//    }
+//
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "id=" + getId() +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", surname='" + surname + '\'' +
+                ", name='" + getName() + '\'' +
                 ", secondname='" + secondname + '\'' +
                 ", email='" + email + '\'' +
                 ", spare1='" + spare1 + '\'' +

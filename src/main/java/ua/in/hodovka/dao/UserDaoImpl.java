@@ -21,20 +21,20 @@ public class UserDaoImpl implements UserDao {
     }
 
 
-    public void addUser(User user) {
+    public void add(User user) {
         Session session = this.sessionFactory.getCurrentSession();
         session.persist(user);
         logger.info("User successfully saved. User details: " + user);
     }
 
-    public void updateUser(User user) {
+    public void update(User user) {
         Session session = this.sessionFactory.getCurrentSession();
         session.update(user);
         logger.info("User successfully update. User details: " + user);
     }
 
 
-    public void removeUser(int id) {
+    public void remove(int id) {
         Session session = this.sessionFactory.getCurrentSession();
         User user = (User) session.load(User.class, new Integer(id));
 
@@ -42,12 +42,12 @@ public class UserDaoImpl implements UserDao {
             session.delete(user);
             logger.info("User successfully removed. User details: " + user);
         } else
-        {logger.error("User removed fail. Book details: " + user);}
+        {logger.error("User removed fail. User details: " + user);}
 
     }
 
 
-    public User getUserByID(int id) {
+    public User getByID(int id) {
         Session session =this.sessionFactory.getCurrentSession();
         User user = (User) session.load(User.class, new Integer(id));
         logger.info("User successfully loaded. User details: " + user);
@@ -56,13 +56,13 @@ public class UserDaoImpl implements UserDao {
     }
 
     // without implementation
-    public User getUserByEmail(String email) {
+    public User getByEmail(String email) {
 
         return null;
     }
 
     @SuppressWarnings("unchecked")
-    public List<User> listUser() {
+    public List<User> getList() {
         Session session = this.sessionFactory.getCurrentSession();
         List<User> userList = session.createQuery("from User").list();
 

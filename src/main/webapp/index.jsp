@@ -5,40 +5,40 @@
 <head>
     <title>Интернет-магазин фирмы "HODOVKA"</title>
     <!-- Bootstrap core CSS -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- animate -->
+    <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../../media/css/register.css" rel="stylesheet">
-
-
+    <link href="media/css/preloader.css" rel="stylesheet">
 </head>
+
 <body>
+<div id="page-preloader" class="preloader">
+    <div class="loader">
+        <img class="animated flip" src="media/img/logo_new.png" alt="logo">
+    </div>
+</div> <!--loader-->
+
         <h1>Интернет-магазин фирмы "HODOVKA"</h1>
         <%--<a href="<c:url value="/users"/>" target="_parent">Пользователи</a>--%>
-        <!-- Trigger the modal with a button -->
-
-
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-            </div>
+        <div class="logo">
+         <img src="media/img/logo_new.png" width="125">
         </div>
+
+        <a href="/about" class="btn btn-info" role="button">О нас</a>
+        <a href="/products/list" class="btn btn-info" role="button">Товары</a>
+        <a href="/users/list" class="btn btn-info" role="button">Пользователи</a>
+
+<!-- JQuery -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap core CSS -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- animate -->
+
+<!-- Bootstrap core CSS -->
+<script src="media/js/preloader.js"></script>
+
 </body>
 </html>
