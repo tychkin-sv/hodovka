@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AboutController {
 
     @RequestMapping("/about")
-    public String listBooks(Model model) {
+    public String aboutUs(Model model) {
         return "about";
     }
 }

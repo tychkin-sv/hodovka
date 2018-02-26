@@ -31,6 +31,7 @@
             <list>
                 <value>ua.in.hodovka.model.User</value>
                 <value>ua.in.hodovka.model.Product</value>
+                <value>ua.in.hodovka.model.Category</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -49,7 +50,16 @@
     </bean>
 
     <bean id="userService" class="ua.in.hodovka.service.UserServiceImpl">
-        <property name="userDao" ref="userDao"/>
+        <property name="itemDao" ref="userDao"/>
+    </bean>
+
+    <!--CategoryDao and CategoryService beans-->
+    <bean id="categoryDao" class="ua.in.hodovka.dao.CategoryDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="categoryService" class="ua.in.hodovka.service.CategoryServiceImpl">
+        <property name="itemDao" ref="categoryDao"/>
     </bean>
 
     <context:component-scan base-package="ua.in.hodovka"/>

@@ -27,8 +27,13 @@
         </div>
 
         <a href="/about" class="btn btn-info" role="button">О нас</a>
-        <a href="/products/list" class="btn btn-info" role="button">Товары</a>
         <a href="/users/list" class="btn btn-info" role="button">Пользователи</a>
+        <a href="/products/list" class="btn btn-info" role="button">Товары</a>
+
+        <a href="/countries/list" class="btn btn-info" role="button">Страны</a>
+        <a href="/categories/list" class="btn btn-info" role="button">Категории</a>
+        <a href="/compatibilities/list" class="btn btn-info" role="button">Совместимость</a>
+
 
 <!-- JQuery -->
 <script src="assets/js/jquery-3.2.1.min.js"></script>

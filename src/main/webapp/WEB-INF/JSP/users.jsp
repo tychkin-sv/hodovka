@@ -3,21 +3,21 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
 <%@ page session="false" %>
 <html>
 <head>
     <title>Пользователи</title>
-    <!-- Bootstrap core CSS -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap and jQuery -->
+    <t:bootstrap></t:bootstrap>
     <!-- Custom styles for this template -->
     <link href="../../media/css/users.css" rel="stylesheet">
 </head>
 <body>
-<a href="../../index.jsp" class="btn btn-info" role="button">На главную</a>
-<br/>
-<br/>
 
 <div class="container">
+<a href="../../index.jsp" class="btn btn-info" role="button">На главную</a>
 <h1>Пользователи</h1>
 
 <c:if test="${!empty listUsers}">
@@ -86,9 +86,6 @@
 </c:if>
 </div>
 
-<!-- JQuery -->
-<script src="../../assets/js/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap core CSS -->
-<script src="../../assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
