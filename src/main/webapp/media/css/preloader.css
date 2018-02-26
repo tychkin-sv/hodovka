@@ -21,7 +21,7 @@
 /* Фигура анимации */
 .preloader > .loader {
     margin: 20% auto;
-    width: 100px;
+    width: 200px;
     /*height: 75px;*/
     /*position: absolute;*/
 
@@ -35,16 +35,16 @@
     /*animation: 5s spin infinite linear;*/
 }
 
-.preloader > .loader>img {
+.preloader > .loader > img {
     width: 100%;
     opacity: 1;
 }
 
 .flip{
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
-
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .logo {
@@ -54,8 +54,6 @@
     animation-timing-function: linear;
     z-index: 100;
 }
-
-
 
 img:hover{
     opacity: 0.7; /* Значение прозрачности */

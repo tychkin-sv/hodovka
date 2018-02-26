@@ -14,53 +14,49 @@ import ua.in.hodovka.service.UserService;
 
 
 @Controller
+@RequestMapping("/users")
 public class UserController {
     private UserService userService;
 
     @Autowired(required = true)
     @Qualifier(value = "userService")
-    public void setBookService(UserService userService) {
+    public void setUserService(UserService userService) {
         this.userService = userService;
     }
 
-    @RequestMapping(value = "users", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String listBooks(Model model){
         model.addAttribute("user", new User());
         model.addAttribute("listUsers", this.userService.listUsers());
-
         return "users";
     }
 
-    @RequestMapping(value = "/users/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addUser(@ModelAttribute("user") User user){
         if(user.getId() == 0){
             this.userService.addUser(user);
         }else {
             this.userService.updateUser(user);
         }
-
         return "redirect:/users";
     }
 
     @RequestMapping("/remove/{id}")
     public String removeBook(@PathVariable("id") int id){
         this.userService.removeUser(id);
-
         return "redirect:/users";
     }
 
-    @RequestMapping("edit/{id}")
+    @RequestMapping("/edit/{id}")
     public String editBook(@PathVariable("id") int id, Model model){
         model.addAttribute("user", this.userService.getUserById(id));
         model.addAttribute("listUsers", this.userService.listUsers());
-
         return "users";
     }
 
-    @RequestMapping("userdata/{id}")
+    @RequestMapping("/userdata/{id}")
     public String bookData(@PathVariable("id") int id, Model model){
         model.addAttribute("book", this.userService.getUserById(id));
-
-        return "userdata";
+        return "users";
     }
 }

@@ -10,5 +10,4 @@ public interface ItemDao <T extends Item>{
     public T getByID(int id);
     public List<T> getList();
 
-
 }

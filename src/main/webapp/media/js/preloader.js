@@ -7,5 +7,5 @@ document.body.onload = function () {
        }
    },  /*время до полной загрузки страницы*/
          2000);
-    console.log("preloader");
+    //console.log("preloader");
 };

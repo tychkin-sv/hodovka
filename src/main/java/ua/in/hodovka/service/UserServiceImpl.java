@@ -9,33 +9,39 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-    private UserDao userDao;
+    private UserDao itemDao;
 
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
+    public void setItemDao(UserDao itemDao) {
+        this.itemDao = itemDao;
     }
 
     @Override
     @Transactional
     public void addUser(User user) {
-        this.userDao.addUser(user);
+        this.itemDao.add(user);
     }
 
     @Override
     @Transactional
     public void updateUser(User user) {
-
+        this.itemDao.update(user);
     }
 
+    @Override
+    @Transactional
     public void removeUser(int id) {
-
+        this.itemDao.remove(id);
     }
 
+    @Override
+    @Transactional
     public User getUserById(int id) {
-        return null;
+        return this.itemDao.getByID(id);
     }
 
+    @Override
+    @Transactional
     public List<User> listUsers() {
-        return null;
+        return this.itemDao.getList();
     }
 }

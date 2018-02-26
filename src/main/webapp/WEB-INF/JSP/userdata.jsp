@@ -14,9 +14,7 @@
 
     <thead class="thead-dark">
     <tr>
-
         <th>Пользователь</th>
-
         <th>Имя</th>
         <th>Фамилия</th>
         <th>Отчество</th>
@@ -24,6 +22,8 @@
     </tr>
     </thead>
     <tbody>
+
+
 <c:forEach var="user" items="${requestScope.users}">
     <tr>
         <td>user.username</td>
@@ -32,7 +32,6 @@
         <td>user.secondname</td>
         <td>user.email</td>
     </tr>
-
 </c:forEach>
     </tbody>
 </table>
