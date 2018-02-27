@@ -3,7 +3,7 @@ package ua.in.hodovka.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tbl_roles")
+@Table(name = "tbl_roles.sql")
 public class Role extends Item{
 
 //    @Id
