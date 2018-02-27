@@ -1,12 +1,8 @@
 # Folder for idea
-<<<<<<< HEAD
-=======
-# git push origin master
->>>>>>> origin/master
 .idea/
 
 # File for idea
-# golovach.iml
+# hodovka.iml
 
 # Folder for target project
 target/
@@ -15,5 +11,8 @@ target/
 *.war
 *.ear
 
-# git push origin master
 
+# git push origin master
+# git fetch origin
+# remote now in origin/master
+# git merge origin/master
