@@ -4,8 +4,8 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
-
 <%@ page session="false" %>
+
 <html>
 <head>
     <title>Пользователи</title>
@@ -17,7 +17,7 @@
 <body>
 
 <div class="container">
-<a href="../../index.jsp" class="btn btn-info" role="button">На главную</a>
+    <a href="/index" class="btn btn-info" role="button">На главную</a>
 <h1>Пользователи</h1>
 
 <c:if test="${!empty listUsers}">
@@ -58,9 +58,6 @@
             <th>2</th>
         </tr>
         <c:forEach items="${listUsers}" var="user">
-
-
-
             <tr>
                 <td>${user.id}</td>
                 <td>
@@ -85,7 +82,6 @@
     <h1>${user.id}</h1>
 </c:if>
 </div>
-
 
 </body>
 </html>

@@ -6,7 +6,6 @@
     <title>Интернет-магазин фирмы "HODOVKA"</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- animate -->
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -14,36 +13,23 @@
 </head>
 
 <body>
+
+<!--loader-->
 <div id="page-preloader" class="preloader">
     <div class="loader">
         <img class="animated flip" src="media/img/logo_new.png" alt="logo">
     </div>
-</div> <!--loader-->
+</div>
 
-        <h1>Интернет-магазин фирмы "HODOVKA"</h1>
-        <%--<a href="<c:url value="/users"/>" target="_parent">Пользователи</a>--%>
-        <div class="logo">
-         <img src="media/img/logo_new.png" width="125">
-        </div>
-
-        <a href="/about" class="btn btn-info" role="button">О нас</a>
-        <a href="/users/list" class="btn btn-info" role="button">Пользователи</a>
-        <a href="/products/list" class="btn btn-info" role="button">Товары</a>
-
-        <a href="/countries/list" class="btn btn-info" role="button">Страны</a>
-        <a href="/categories/list" class="btn btn-info" role="button">Категории</a>
-        <a href="/compatibilities/list" class="btn btn-info" role="button">Совместимость</a>
-
+<div class="container">
+    <a id="index" href="/index" class="btn btn-info" role="button">На главную</a>
+</div>
 
 <!-- JQuery -->
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <!-- Bootstrap core CSS -->
 <script src="assets/js/bootstrap.min.js"></script>
-
-<!-- animate -->
-
-<!-- Bootstrap core CSS -->
+<!-- preloader -->
 <script src="media/js/preloader.js"></script>
-
 </body>
 </html>

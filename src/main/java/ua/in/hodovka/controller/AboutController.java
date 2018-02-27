@@ -11,4 +11,9 @@ public class AboutController {
     public String aboutUs(Model model) {
         return "about";
     }
+
+    @RequestMapping("/index")
+    public String index(Model model) {
+        return "index";
+    }
 }

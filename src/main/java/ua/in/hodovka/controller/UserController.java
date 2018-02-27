@@ -27,37 +27,37 @@ public class UserController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String listUsers(Model model){
         model.addAttribute("user", new User());
-        model.addAttribute("listUsers", this.userService.listUsers());
+        model.addAttribute("listUsers", this.userService.getList());
         return "users";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addUser(@ModelAttribute("user") User user){
         if(user.getId() == 0){
-            this.userService.addUser(user);
+            this.userService.add(user);
         }else {
-            this.userService.updateUser(user);
+            this.userService.update(user);
         }
         return "redirect:/users";
     }
 
     @RequestMapping("/remove/{id}")
     public String removeUser(@PathVariable("id") int id){
-        this.userService.removeUser(id);
+        this.userService.remove(id);
         return "redirect:/users";
     }
 
     @RequestMapping("/edit/{id}")
     public String editBook(@PathVariable("id") int id, Model model){
-        model.addAttribute("user", this.userService.getUserById(id));
-        model.addAttribute("listUsers", this.userService.listUsers());
+        model.addAttribute("user", this.userService.getById(id));
+        model.addAttribute("listUsers", this.userService.getList());
 
         return "users";
     }
 
     @RequestMapping("/userdata/{id}")
     public String bookData(@PathVariable("id") int id, Model model){
-        model.addAttribute("book", this.userService.getUserById(id));
+        model.addAttribute("book", this.userService.getById(id));
         return "users";
     }
 }

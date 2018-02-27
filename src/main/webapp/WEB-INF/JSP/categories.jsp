@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-    <a href="../../index.jsp" class="btn btn-info" role="button">На главную</a>
+    <a href="/index" class="btn btn-info" role="button">На главную</a>
     <h1>Категории товаров</h1>
 
     <c:if test="${!empty list}">
