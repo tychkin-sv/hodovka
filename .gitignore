@@ -1,4 +1,8 @@
 # Folder for idea
+<<<<<<< HEAD
+=======
+# git push origin master
+>>>>>>> origin/master
 .idea/
 
 # File for idea
