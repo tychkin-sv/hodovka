@@ -1,16 +1,21 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:genericpage>
-    <jsp:attribute name="header">
-      <h1>О нас</h1>
-    </jsp:attribute>
+<html>
+<head>
+    <t:bootstrap></t:bootstrap>
+    <title>О нас</title>
+</head>
+<body>
+<div class="container">
 
-    <jsp:body>
-        <p>This is body part of HTML</p>
-    </jsp:body>
+    <jsp:include page="header.jsp"/>
 
-    <jsp:attribute name="footer">
-      <p id="copyright">Copyright 2018, tsv-design.com.ua</p>
-    </jsp:attribute>
-</t:genericpage>
+    <div class="row">
+        <div class="span4">1</div>
+        <div class="span4">2</div>
+        <div class="span4">3</div>
+    </div>
+</div>
+</body>
+</html>
