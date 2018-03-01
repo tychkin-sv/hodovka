@@ -4,7 +4,7 @@ import ua.in.hodovka.model.Category;
 
 import java.util.List;
 
-public interface CategoryService {
+public interface ICategoryService {
     public void add(Category item);
 
     public void update(Category item);

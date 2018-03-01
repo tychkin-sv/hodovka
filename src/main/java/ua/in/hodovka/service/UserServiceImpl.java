@@ -1,17 +1,17 @@
 package ua.in.hodovka.service;
 
 import ua.in.hodovka.model.User;
-import ua.in.hodovka.dao.UserDao;
+import ua.in.hodovka.dao.IUserDao;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService {
-    private UserDao itemDao;
+public class UserServiceImpl implements IUserService {
+    private IUserDao itemDao;
 
-    public void setItemDao(UserDao itemDao) {
+    public void setItemDao(IUserDao itemDao) {
         this.itemDao = itemDao;
     }
 

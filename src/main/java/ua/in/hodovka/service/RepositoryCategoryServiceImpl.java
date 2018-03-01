@@ -1,47 +1,50 @@
 package ua.in.hodovka.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ua.in.hodovka.dao.ICategoryDao;
+import ua.in.hodovka.dao.IRepositoryCategoryDao;
 import ua.in.hodovka.model.Category;
 
 import java.util.List;
 
 @Service
-public class CategoryServiceImpl implements ICategoryService {
-    private ICategoryDao itemDao;
+public class RepositoryCategoryServiceImpl implements ICategoryService {
 
-    public void setItemDao(ICategoryDao itemDao) {
+    @Autowired
+    /*@Qualifier(value = "")*/
+    IRepositoryCategoryDao itemDao;
+
+    public void setItemDao(IRepositoryCategoryDao itemDao) {
         this.itemDao = itemDao;
     }
 
-    @Override
     @Transactional
     public void add(Category item) {
-        this.itemDao.add(item);
+        this.itemDao.save(item);
     }
 
-    @Override
     @Transactional
     public void update(Category item) {
-        this.itemDao.update(item);
+        this.itemDao.save(item);
     }
 
     @Override
     @Transactional
     public void remove(int id) {
-        this.itemDao.remove(id);
+        this.itemDao.delete(id);
     }
 
     @Override
     @Transactional
     public Category getById(int id) {
-        return this.itemDao.getByID(id);
+        return this.itemDao.findOne(id);
     }
 
     @Override
     @Transactional
     public List<Category> getList() {
-        return this.itemDao.getList();
+        return (List<Category>) this.itemDao.findAll();
     }
 }

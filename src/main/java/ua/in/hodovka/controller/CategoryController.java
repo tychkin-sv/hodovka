@@ -7,17 +7,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import ua.in.hodovka.model.Category;
-import ua.in.hodovka.service.CategoryService;
+import ua.in.hodovka.service.ICategoryService;
 
 
 @Controller
 @RequestMapping("/categories")
 public class CategoryController {
-    private CategoryService categoryService;
+
+    private ICategoryService categoryService;
 
     @Autowired(required = true)
     @Qualifier(value = "categoryService")
-    public void setCategoryService(CategoryService categoryService) {
+    public void setCategoryService(ICategoryService categoryService) {
         this.categoryService = categoryService;
     }
 

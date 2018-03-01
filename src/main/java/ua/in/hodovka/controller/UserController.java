@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import ua.in.hodovka.model.User;
-import ua.in.hodovka.service.UserService;
+import ua.in.hodovka.service.IUserService;
 
 
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    private UserService userService;
+    private IUserService userService;
 
     @Autowired(required = true)
     @Qualifier(value = "userService")
-    public void setUserService(UserService userService) {
+    public void setUserService(IUserService userService) {
         this.userService = userService;
     }
 

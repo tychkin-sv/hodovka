@@ -10,7 +10,7 @@ import ua.in.hodovka.model.User;
 import java.util.List;
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl implements IUserDao {
     //Для логирования
     private static final Logger logger = LoggerFactory.getLogger(UserDaoImpl.class);
 

@@ -4,11 +4,13 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 import ua.in.hodovka.model.Product;
 
 import java.util.List;
 
-public class ProductDaoImpl implements ProductDao{
+@Repository
+public class ProductDaoImpl implements IProductDao {
     //Для логирования
     private static final Logger logger = LoggerFactory.getLogger(ProductDaoImpl.class);
     private SessionFactory sessionFactory;

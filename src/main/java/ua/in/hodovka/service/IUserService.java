@@ -4,7 +4,7 @@ import ua.in.hodovka.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface IUserService {
     public void add(User user);
 
     public void update(User user);
