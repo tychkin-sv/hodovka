@@ -15,6 +15,8 @@
 </head>
 <body>
 
+
+<jsp:include page="header.jsp"/>
 <div class="container">
     <a href="/index" class="btn btn-info" role="button">На главную</a>
     <h1>Категории товаров</h1>
@@ -65,5 +67,7 @@
         </table>
         </c:if>
     </div>
+
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

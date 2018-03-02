@@ -5,11 +5,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Пользователи</title>
+
+    <!-- Bootstrap and jQuery -->
+    <t:bootstrap></t:bootstrap>
 </head>
 
 <body>
+<jsp:include page="header.jsp"/>
 
+<!--Main content-->
 <table caption="Пользователи" class="table .table-striped">
 
     <thead class="thead-dark">
@@ -35,5 +41,7 @@
 </c:forEach>
     </tbody>
 </table>
+
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

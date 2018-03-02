@@ -16,9 +16,11 @@
 </head>
 <body>
 
+<jsp:include page="header.jsp"/>
+
 <div class="container">
     <a href="/index" class="btn btn-info" role="button">На главную</a>
-<h1>Пользователи</h1>
+    <h1>Пользователи</h1>
 
 <c:if test="${!empty listUsers}">
     <c:forEach items="${listUsers}" var="user">
@@ -82,6 +84,7 @@
     <h1>${user.id}</h1>
 </c:if>
 </div>
+<jsp:include page="footer.jsp"/>
 
 </body>
 </html>

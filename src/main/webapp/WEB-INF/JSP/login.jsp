@@ -13,11 +13,12 @@
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<jsp:include page="header.jsp"/>
 <div class="container">
     <div class="row">
 
     </div>
 </div>
-
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

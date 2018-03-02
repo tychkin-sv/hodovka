@@ -1,0 +1,15 @@
+.content-fixed{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-image: url(../../media/img/fixed.png);
+}
+
+.fixed{
+
+    opacity: 0.1;
+}

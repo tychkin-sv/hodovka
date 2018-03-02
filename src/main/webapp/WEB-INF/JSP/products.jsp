@@ -4,9 +4,27 @@
 
 <html>
 <head>
-    <title>Продукты</title>
+
+    <title>Товары и услуги</title>
+    <!-- Bootstrap and jQuery -->
+    <t:bootstrap></t:bootstrap>
+
 </head>
 <body>
+
+<jsp:include page="header.jsp"/>
+
+<!--Main content-->
+<div class="container">
+    <div class="row">
+
+
+
+    </div>
+</div>
+
+<jsp:include page="footer.jsp"/>
+
 
 </body>
 </html>
