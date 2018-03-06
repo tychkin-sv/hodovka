@@ -5,12 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class AboutController {
-
-    @RequestMapping("/about")
-    public String aboutUs(Model model) {
-        return "about";
+public class IdexController {
+    @RequestMapping("/index")
+    public String index(Model model) {
+        return "index";
     }
-
-
 }

@@ -10,6 +10,7 @@ public class User extends Item{
 //   @Column(name = "id")
 //   @GeneratedValue(strategy = GenerationType.IDENTITY)
 //   private long id;
+    private static final long serialVersionUID = -5527566248002296042L;
 
     @Column(name = "username")
     private String username;

@@ -22,7 +22,7 @@
 </div>
 
 <div class="container">
-    <a id="index" href="/index" class="btn btn-info" role="button">На главную</a>
+    <a id="index" href="/index/" class="btn btn-info" role="button">На главную</a>
 </div>
 
 <!-- JQuery -->

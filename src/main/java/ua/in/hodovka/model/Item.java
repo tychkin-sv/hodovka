@@ -1,10 +1,11 @@
 package ua.in.hodovka.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 // Общий класс для модели
 @MappedSuperclass
-public abstract class Item {
+public abstract class Item implements Serializable{
 
     @Id
     @Column(name = "ID")

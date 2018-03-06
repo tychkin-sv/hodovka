@@ -5,12 +5,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class AboutController {
+public class RegisterController {
+    @RequestMapping("/register")
+    public String getLogin(Model model){
 
-    @RequestMapping("/about")
-    public String aboutUs(Model model) {
-        return "about";
+        return "register";
     }
-
-
 }

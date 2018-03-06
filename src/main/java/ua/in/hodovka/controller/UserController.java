@@ -56,7 +56,7 @@ public class UserController {
     }
 
     @RequestMapping("/userdata/{id}")
-    public String bookData(@PathVariable("id") int id, Model model){
+    public String userData(@PathVariable("id") int id, Model model){
         model.addAttribute("book", this.userService.getById(id));
         return "users";
     }

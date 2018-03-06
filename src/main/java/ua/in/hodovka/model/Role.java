@@ -13,6 +13,7 @@ public class Role extends Item{
 //
 //    @Column(name = "name")
 //    private String name;
+    private static final long serialVersionUID = -5527566248002296042L;
 
     @Column(name = "description")
     private String description;
