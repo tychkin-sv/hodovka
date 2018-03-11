@@ -12,6 +12,6 @@ document.body.onload = function () {
            console.log("current location : " + window.location);
        }
    },  /*время до полной загрузки страницы*/
-         2000);
+         100000);
     //console.log("preloader");
 };

@@ -21,18 +21,7 @@
 /* Фигура анимации */
 .preloader > .loader {
     margin: 20% auto;
-    width: 200px;
-    /*height: 75px;*/
-    /*position: absolute;*/
-
-    /*border: 10px solid white;
-    border-radius: 50%;
-    border-top-color: blue;
-    left: 50%;
-    right: 50%;*/
-
-    /*transform: translate(-50%, -50%);  */
-    /*animation: 5s spin infinite linear;*/
+    width: 100px;
 }
 
 .preloader > .loader > img {
@@ -40,19 +29,11 @@
     opacity: 1;
 }
 
-.flip{
+.flip {
     -webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-}
-
-.logo {
-    animation-name: ligthSpeedIn;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 100;
 }
 
 img:hover{
@@ -65,36 +46,4 @@ img:hover{
     opacity: 1; /* Значение прозрачности */
 }
 
-/* Значение прозрачности */
-/*
-.container {
-    z-index: 2;
-    width: 400px;
-    margin: 50px auto;
-}
-
-*/
-
-/* Анимации */
-
-/* Анимация вращения */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Анимации вращение*/
-@keyframes logoAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-
-}
 

@@ -1,4 +1,3 @@
-
 CREATE TABLE aubmgecb_hodovka.tbl_users (
   ID INT NOT NULL AUTO_INCREMENT,
   username VARCHAR(255) NOT NULL,
