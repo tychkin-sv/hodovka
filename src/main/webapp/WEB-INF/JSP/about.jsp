@@ -13,9 +13,17 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-md-4">1</div>
-        <div class="col-lg-4 col-md-4">2</div>
-        <div class="col-lg-4 col-md-4">3</div>
+        <div class="col-lg-4 col-md-4">
+            <p>Алюминиевые колесные проставки</p>
+            <p>4х100, Dia = 58.6</p>
+            <img class="goods" src="../../media/img/goods/good1.jpg" alt="1">
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <img class="goods" src="../../media/img/goods/good2.jpg" alt="2">
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <img class="goods" src="../../media/img/goods/good3.jpg" alt="3">
+        </div>
     </div>
 </div>
 

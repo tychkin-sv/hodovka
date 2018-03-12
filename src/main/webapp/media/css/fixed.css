@@ -10,6 +10,9 @@
 }
 
 .fixed{
-
     opacity: 0.1;
+}
+
+body{
+    min-height: 800px;
 }

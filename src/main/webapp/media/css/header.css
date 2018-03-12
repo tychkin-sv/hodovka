@@ -2,3 +2,18 @@
     background-color: #2B3238;
     color: #F8F8F8;
 }
+
+.goods{
+    border: 1px solid white;
+    width: 200px;
+    opacity: 0.5;
+}
+
+.goods:hover{
+    border: 1px solid red;
+     opacity: 1;
+}
+
+.goods{
+    margin: 10px auto;
+}

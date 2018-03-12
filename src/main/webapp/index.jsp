@@ -17,7 +17,7 @@
 <!--loader-->
 <div id="page-preloader" class="preloader">
     <div class="loader">
-        <img class="animated flip" src="media/img/logo_new.png" alt="logo">
+        <img class="animated logo" src="media/img/logo_new.png" alt="logo">
     </div>
 </div>
 

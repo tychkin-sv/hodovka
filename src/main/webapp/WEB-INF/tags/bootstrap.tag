@@ -15,5 +15,5 @@
 <!-- Footer -->
 <link href="../../media/css/footer.css" rel="stylesheet">
 <!-- Fixed content -->
-<link href="../../media/css/fi.css" rel="stylesheet">
+<link href="../../media/css/fixed.css" rel="stylesheet">
 
