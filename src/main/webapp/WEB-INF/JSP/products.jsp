@@ -11,7 +11,6 @@
 
 </head>
 <body>
-
 <jsp:include page="header.jsp"/>
 
 <!--Main content-->
@@ -24,7 +23,5 @@
 </div>
 
 <jsp:include page="footer.jsp"/>
-
-
 </body>
 </html>
