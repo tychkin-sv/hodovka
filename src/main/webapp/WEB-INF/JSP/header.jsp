@@ -1,13 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<nav class="navbar navbar-light" >
+
+<nav class="navbar navbar-expand-sm bg-light">
 
     <a class="navbar-brand" href="/index">
-        <img src="/media/img/logo_new.png" width="100" class="d-inline-block align-top" alt="logo">
-        Navbar
+        <img src="../../media/img/logo_new.png" width="100" class="d-inline-block align-top" alt="logo">
     </a>
-
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/about">О нас<span class="sr-only">(current)</span></a>
             </li>
@@ -44,5 +42,4 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-    </div>
 </nav>
