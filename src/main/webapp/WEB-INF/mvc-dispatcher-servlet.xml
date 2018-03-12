@@ -37,7 +37,7 @@
         <property name="annotatedClasses">
             <list>
                 <value>ua.in.hodovka.model.User</value>
-                <value>ua.in.hodovka.model.Product</value>
+                <!--value>ua.in.hodovka.model.Product</value-->
                 <value>ua.in.hodovka.model.Category</value>
 
 

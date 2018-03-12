@@ -18,6 +18,11 @@
 <jsp:include page="header.jsp"/>
 <div class="container">
     <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+<div class="container">
+    <div class="row">
 
         <form action="action_page.php">
             <div class="imgcontainer">
@@ -42,6 +47,10 @@
             </div>
         </form>
 
+    </div>
+</div>
+    </div>
+        <div class="col-sm">
     </div>
 </div>
 <jsp:include page="footer.jsp"/>
