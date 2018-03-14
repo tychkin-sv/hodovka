@@ -1,7 +1,8 @@
-body {
+body{
+     min-height: 1000px;
+ }
 
 
-}
 
 
 .content-fixed{
@@ -19,6 +20,3 @@ body {
     opacity: 0.1;
 }
 
-body{
-    min-height: 800px;
-}

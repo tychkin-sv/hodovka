@@ -9,6 +9,7 @@
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Вход</title>
     <!-- Bootstrap and jQuery -->
     <t:bootstrap></t:bootstrap>
@@ -23,10 +24,9 @@
         <div class="col-sm">
 <div class="container">
     <div class="row">
-
         <form action="action_page.php">
             <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                <img src="../../media/img/goods/good1.jpg" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">

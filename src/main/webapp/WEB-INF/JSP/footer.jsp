@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
     <!--Footer-->
-    <footer class="">
+    <footer class="container-fluid">
         <div class="footer">
         <!--Social buttons-->
         <div class="container">
