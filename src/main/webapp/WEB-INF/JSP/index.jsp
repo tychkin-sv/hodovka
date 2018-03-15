@@ -12,7 +12,6 @@
 
 <!--jsp:include page="fixed.jsp"/-->
 <jsp:include page="header.jsp"/>
-
 <div class="container">
 
     <h1>Интернет-магазин фирмы "HODOVKA"</h1>

@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>Интернет-магазин фирмы "HODOVKA"</title>
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- animate -->
@@ -26,7 +27,7 @@
 </div>
 
 <!-- JQuery -->
-<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap core CSS -->
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- preloader -->
