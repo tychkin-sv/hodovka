@@ -7,10 +7,9 @@
     height: 100%;
 
     z-index: 5; /* верхний слой  */
-    /* background-color: white;*/ /*для теста*/
-    background-color: #1D1D1B;
-    opacity: 1;         /*прозрачность*/
-    visibility: visible; /*видимость*/
+    background-color: #1D1D1B;  /*Фон*/
+    opacity: 1;                 /*прозрачность*/
+    visibility: visible;        /*видимость*/
 }
 
 .preloader.done {

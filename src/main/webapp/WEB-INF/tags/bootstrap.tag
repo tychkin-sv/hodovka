@@ -15,5 +15,5 @@
 <link href="../../media/css/footer.css" rel="stylesheet">
 
 <!-- Fixed and main content -->
-<link href="../../media/css/main.css" rel="stylesheet">
+<link href="../../media/css/header.css" rel="stylesheet">
 

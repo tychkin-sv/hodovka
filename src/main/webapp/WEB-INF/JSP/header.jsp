@@ -56,6 +56,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -64,4 +66,13 @@
 
         </div>
     </div>
+
 </nav>
+<div id="headerwrap">
+<div class="container">
+    <div class="row centered">
+        <h1>Интернет-магазин фирмы "HODOVKA"</h1>
+        <h2>Сайт работает на Bootstrap и java</h2>
+    </div>
+</div>
+</div>
