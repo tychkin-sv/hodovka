@@ -6,8 +6,8 @@ import java.util.List;
 public interface IItemDao<T extends Item>{
     public void add(T item);
     public void update(T item);
-    public void remove(int id);
-    public T getByID(int id);
+    public void remove(long id);
+    public T getByID(long id);
     public List<T> getList();
 
 }

@@ -34,9 +34,9 @@ public class ProductDaoImpl implements IProductDao {
     }
 
     @Override
-    public void remove(int id) {
+    public void remove(long id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Product product = (Product) session.load(Product.class, new Integer(id));
+        Product product = (Product) session.load(Product.class, new Long(id));
 
         if(product!=null){
             session.delete(product);
@@ -46,9 +46,9 @@ public class ProductDaoImpl implements IProductDao {
     }
 
     @Override
-    public Product getByID(int id) {
+    public Product getByID(long id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Product product = (Product) session.load(Product.class, new Integer(id));
+        Product product = (Product) session.load(Product.class, new Long(id));
         logger.info("Product successfully loaded. Product details: " + product);
         return product;
     }

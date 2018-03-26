@@ -34,9 +34,9 @@ public class CategoryDaoImpl implements ICategoryDao {
     }
 
     @Override
-    public void remove(int id) {
+    public void remove(long id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Category item = (Category) session.load(Category.class, new Integer(id));
+        Category item = (Category) session.load(Category.class, new Long(id));
         if(item!=null){
             session.delete(item);
             logger.info("Category successfully removed. Category details: " + item);
@@ -45,9 +45,9 @@ public class CategoryDaoImpl implements ICategoryDao {
     }
 
     @Override
-    public Category getByID(int id) {
+    public Category getByID(long id) {
         Session session =this.sessionFactory.getCurrentSession();
-        Category item = (Category) session.load(Category.class, new Integer(id));
+        Category item = (Category) session.load(Category.class, new Long(id));
         logger.info("Category successfully loaded. Category details: " + item);
         return item;
     }

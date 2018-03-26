@@ -16,10 +16,13 @@ import ua.in.hodovka.service.IUserService;
 @Controller
 @RequestMapping("/users")
 public class UserController {
+
+
+    @Autowired
+    @Qualifier(value = "userService")
     private IUserService userService;
 
-    @Autowired(required = true)
-    @Qualifier(value = "userService")
+
     public void setUserService(IUserService userService) {
         this.userService = userService;
     }

@@ -115,4 +115,9 @@
     <mvc:annotation-driven/>
 
 
+
+    <!--for test-->
+    <bean id="daoTest" class="ua.in.hodovka.dao.DaoTestImpl"/>
+    <bean id="serviceTest" class="ua.in.hodovka.service.ServiceTestImpl"/>
+
 </beans>
