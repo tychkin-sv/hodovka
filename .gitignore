@@ -2,7 +2,7 @@
 .idea/
 
 # File for idea
-hodovka.iml
+*.iml
 
 # Folder for target project
 target/

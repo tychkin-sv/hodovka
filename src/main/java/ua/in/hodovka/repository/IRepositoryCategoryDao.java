@@ -1,4 +1,4 @@
-package ua.in.hodovka.dao;
+package ua.in.hodovka.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
